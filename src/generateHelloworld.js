@@ -1,4 +1,4 @@
-import helloWorldTemplates from './helloWorldTemplates.json' assert { type: "json" };
+import helloWorldTemplates from './helloWorldTemplates.js'
 import { codeBlock } from 'discord.js'
 const main = (member) => {
     const template =

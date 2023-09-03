@@ -1,4 +1,4 @@
-[
+export default  [
     {
         "lang": "c",
         "template": "printf(\"Hello World ${username}!\");"

@@ -55,4 +55,4 @@ client.on('guildMemberAdd', async member => {
     member.guild.channels.cache.find(i => i.name.includes('greeting')).send({ content: `${member}`, embeds: [welcomeEmbed], components: [row] })
 })
 
-client.login(process.env.TOKEN);
+client.login('MTE0NDU0MDcxNjAyMjkxMDk3Ng.GuN1vO.SKJaE2fkm6R8MPZxVvGHndRqS1w_CwJr-1TcI0');
