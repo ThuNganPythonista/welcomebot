@@ -46,7 +46,7 @@ client.on('guildMemberAdd', async member => {
     const welcomeEmbed = new EmbedBuilder()
         .setColor('Random')
         .setTitle(
-            `Chào mừng ${member.displayName} đã đến với vũ trụ ${guild.name}!`
+            `Welcome ${member.displayName} to ${guild.name} universe!`
         )
         .setDescription(generateHelloworld(member))
         .setThumbnail(member.displayAvatarURL())
