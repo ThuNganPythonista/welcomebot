@@ -33,5 +33,70 @@ const template =
 
 **2) GetRandomBanner:**
 
+This file is an event handler function written in JavaScript, possibly for a Discord bot using the Discord.js library
 
+**Import Statement:**
 
+```python
+import {
+    ChannelType,
+} from 'discord.js'
+```
+
+This imports the **ChannelTyp** from the `discord.js` library.
+
+**Exported Function:**
+
+```python
+export default async (guild) => {
+    // Function Body
+}
+```
+This is an asynchronous function that takes a guild as a parameter. 
+It is likely an event handler for a Discord bot that gets triggered when a **guild** (server) event occurs.
+
+**Fetching Images Channel:**
+
+```python
+const imagesChannelCache = await guild.channels.cache.find((c) =>
+    c.name
+        .toLowerCase()
+        .includes('banners')
+)
+```
+
+This searches for a channel in the guild's cache with a name containing **'banners'** (case-insensitive). It seems to be looking for a specific type of channel, possibly for storing banners or images.
+
+**Checking Channel Type:**
+
+```python
+if (imagesChannel.type !== ChannelType.GuildText) return
+```
+
+It checks if the found channel is a text channel. If it's not, the function returns, indicating that it expects the 'banners' channel to be a text channel.
+
+**Fetching Messages in the Channel:**
+
+```python
+const messages = await imagesChannel.messages.fetch()
+```
+
+It fetches all the messages in the 'banners' channel.
+
+**Selecting a Random Message with Attachments:**
+
+```python
+const message = await messages
+    .filter((x) => x.attachments.size || !!x.attachments)
+    .random()
+```
+
+It filters messages to select ones with attachments and then randomly selects one of those messages.
+
+**Selecting a Random Attachment from the Message:**
+
+It filters attachments to select ones with content type 'image' and then randomly selects one of those attachments.
+
+**Returning the Chosen Banner:**
+
+`return banner`
