@@ -29,3 +29,9 @@ const template =
     )
 ```
 => This returns a string generated using the codeBlock function from `discord.js`. It replaces `${username}` in the template with the displayName property of the member parameter.
+
+
+**2) GetRandomBanner:**
+
+
+
