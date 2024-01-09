@@ -138,47 +138,10 @@ body:before {
     content: 'Hello World ${username}';
 }
 
+```
 
-This appears to be an array of objects, each containing a programming language (`lang`) and a corresponding code template (`template`). The templates seem to be simple "Hello World" programs tailored for different programming languages, and they include a placeholder `${username}` which can be replaced with an actual username.
 
-Here's an overview of some of the languages included:
 
-- **C:**
-  ```c
-  printf("Hello World ${username}!");
-  ```
-
-- **Python:**
-  ```python
-  print("Hello World ${username}")
-  ```
-
-- **JavaScript:**
-  ```javascript
-  console.log("Hello World ${username}!");
-  ```
-
-- **Java:**
-  ```java
-  System.out.println("Hello World ${username}!");
-  ```
-
-- **HTML:**
-  ```html
-  <h1>Hello World ${username}!</h1>
-  ```
-
-- **SQL:**
-  ```sql
-  SELECT user FROM Mely WHERE greeting = "Hello World ${username}!";
-  ```
-
-- **CSS:**
-  ```css
-  body:before {
-      content: 'Hello World ${username}';
-  }
-  ```
 
 We can use these templates to generate "Hello World" programs in different programming languages with a personalized greeting for a given username.
 
