@@ -237,7 +237,7 @@ client.on('guildMemberAdd', async member => {
     )
 ```
 
-It generates a welcome embed message with a random banner, a personalized greeting, and user information.
+It generates a welcome embed message with a random banner, a personalized greeting, and user information..
 
 
 ```
