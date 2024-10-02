@@ -2,7 +2,7 @@
 
 Welcomebot is a bot designed to generate 29 different 'Hello World' greetings from various knowledgeable fields in programming.
 
-**1)generateHelloworld**
+**1)GenerateHelloworld**
 
 `import helloWorldTemplates from './helloWorldTemplates.js'`
 => We import 29 `helloWorld` greetings that we wrote in the file `helloWorld`
